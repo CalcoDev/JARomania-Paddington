@@ -126,7 +126,7 @@ const Card = ({
         <Image
           className="aspect-square w-full rounded-lg object-cover"
           alt={`${title} LOGO`}
-          src={`/${icon}`}
+          src={`/JARomania-Paddington/${icon}`}
           width={512}
           height={512}
         />
