@@ -184,7 +184,7 @@ export default function Clubs() {
       </div>
       <div className="grid grid-cols-1 gap-5 pt-12 lg:grid-cols-2 2xl:grid-cols-3">
         {clubs.map((club) => (
-          <Card {...club} />
+          <Card key={club.icon} {...club} />
         ))}
       </div>
     </section>

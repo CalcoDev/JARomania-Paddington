@@ -105,7 +105,7 @@ const Navigation = () => {
               }}
               href="/chat"
             >
-              Let's Chat!
+              See the demo!
             </PhoneNavLink>
           </div>
         </div>

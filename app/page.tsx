@@ -80,11 +80,11 @@ export default function Home() {
             fellow students and alumni as well.
           </p>
           <p className="text-md text-center md:text-left lg:text-lg">
-            Be it through clubs, meet 'n greets or other form of events, such
-            interactions are crucial to providing motivation and helping feed
-            newer student's interests, especially in areas of rapid developnment
-            and cases where teachers might not be able to provide the student
-            adequate information.
+            Be it through clubs, meet &apos;n greets or other form of events,
+            such interactions are crucial to providing motivation and helping
+            feed newer student&apos;s interests, especially in areas of rapid
+            developnment and cases where teachers might not be able to provide
+            the student adequate information.
           </p>
         </div>
       </Section>
@@ -102,12 +102,12 @@ export default function Home() {
           <p className="text-md text-center md:text-left lg:text-lg">
             Seeing all of us had issues with communit engagement and felt like
             our environment was rather lackluster and oftentimes outright boring
-            inducing due to teacher's absences or the lack of fellow student
-            engagement, we decided to take matters into our own hands and try to
-            create a place where information is readily available and at your
-            fingertips and more than that a place where a sense of community can
-            really form and help everyone explore their passions, aiding them
-            whenever necessary.
+            inducing due to teacher&apos;s absences or the lack of fellow
+            student engagement, we decided to take matters into our own hands
+            and try to create a place where information is readily available and
+            at your fingertips and more than that a place where a sense of
+            community can really form and help everyone explore their passions,
+            aiding them whenever necessary.
           </p>
           <p className="text-md text-center md:text-left lg:text-lg">
             Our collective journey sprouted from the seeds of disenchantment
@@ -119,8 +119,9 @@ export default function Home() {
             fostering an ecosystem of collaboration and inclusivity, we aim to
             transcend the barriers of traditional education, creating a melting
             pot of diverse perspectives and talents. Our endeavor extends beyond
-            mere information dissemination; it's a catalyst for transformation,
-            igniting the spark of creativity and innovation within each member.
+            mere information dissemination; it&apos;s a catalyst for
+            transformation, igniting the spark of creativity and innovation
+            within each member.
           </p>
         </div>
       </Section>
