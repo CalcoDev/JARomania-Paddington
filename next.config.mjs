@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  basePath: "https://calcodev.github.io/jaromania-paddington",
+  basePath: "/jaromania-paddington",
   output: "export",  // <=== enables static exports
   reactStrictMode: true,
 };
