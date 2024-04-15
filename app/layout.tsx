@@ -34,7 +34,7 @@ export default function RootLayout({
         <link rel="icon" href="/owlbear.ico" sizes="any" />
       </head>
       <body
-        className={`${poppins.className} ${poppins.variable} bg-background`}
+        className={`${poppins.className}  ${poppins.variable} bg-background`}
       >
         <Providers>
           <Navigation />
