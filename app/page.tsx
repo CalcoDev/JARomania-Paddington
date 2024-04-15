@@ -1,113 +1,129 @@
 import Image from "next/image";
+import Link from "next/link";
+import React from "react";
+
+const Section: React.FC<React.HTMLAttributes<HTMLDivElement>> = ({
+  children,
+  className,
+  ...rest
+}) => {
+  return (
+    <section
+      className={`${className} mb-12 min-h-screen w-full scroll-smooth`}
+      {...rest}
+    >
+      {children}
+    </section>
+  );
+};
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <>
+      <Section
+        className="flex h-[calc(100vh-4rem)] items-center justify-center"
+        id="heading"
+      >
+        <div className="flex flex-col items-center gap-12 md:flex-row">
+          <Image
+            className="flex-1 md:w-2/3 lg:w-[60vw]"
+            alt="Illustratiotn"
+            src="/homepage.png"
+            width={528}
+            height={528}
+          />
+          <div className="flex-2 flex flex-col items-center gap-6 md:items-start">
+            <h1 className="text-center text-3xl font-bold md:text-left md:text-5xl lg:text-6xl xl:text-8xl">
+              <span className="inline bg-gradient-to-br from-primary to-accent bg-clip-text text-transparent saturate-150">
+                Paddington
+              </span>{" "}
+              <span className="inline text-background shadow-sm [text-shadow:_1px_0_#FCECDE,_-1px_0_#FCECDE,_0_1px_#FCECDE,_0_-1px_#FCECDE,_1px_1px_#FCECDE,_-1px_-1px_#FCECDE,_1px_-1px_#FCECDE,_-1px_1px_#FCECDE;]">
+                CNMV
+              </span>{" "}
+            </h1>
+            <p className="text-md text-center md:text-left lg:text-lg">
+              A new, AI powered, take on High School community engagement,
+              management and problem solving, <br /> utilizing the power of AI.
+            </p>
+            <div className="flex flex-row gap-4">
+              <Link
+                href="#about"
+                className="rounded-lg bg-secondary bg-opacity-25 px-6 py-3 transition-all duration-150 ease-in-out hover:scale-105 hover:bg-opacity-50 active:scale-95"
+              >
+                Learn more
+              </Link>
+              <Link
+                href="/chat"
+                className="rounded-lg bg-primary px-6 py-3 transition-all duration-150 ease-in-out hover:scale-105 active:scale-95"
+              >
+                See the Demo
+              </Link>
+            </div>
+          </div>
         </div>
-      </div>
-
-      <div className="relative z-[-1] flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Find in-depth information about Next.js features and API.
+      </Section>
+      <Section id="information">
+        <div className="flex flex-col items-center gap-12">
+          <h1 className="text-center text-3xl font-bold md:text-left md:text-5xl lg:text-6xl xl:text-8xl">
+            Information
+          </h1>
+          <p className="text-md text-center md:text-left lg:text-lg">
+            Entering High School is a challenging task, with many problems faced
+            along the way, but most of them stem from the same root cause: the
+            lack of a place to gather concrete, accurate, information and
+            discuss about it.
           </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
+          <p className="text-md text-center md:text-left lg:text-lg">
+            Even in the few rare cases information is available, another area we
+            found to be lackluster and a common place necessiting attention is
+            engagement with the community, not only teachers and staff but
+            fellow students and alumni as well.
           </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Explore starter templates for Next.js.
+          <p className="text-md text-center md:text-left lg:text-lg">
+            Be it through clubs, meet 'n greets or other form of events, such
+            interactions are crucial to providing motivation and helping feed
+            newer student's interests, especially in areas of rapid developnment
+            and cases where teachers might not be able to provide the student
+            adequate information.
           </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50">
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
+        </div>
+      </Section>
+      <Section className="h-fit pb-28" id="about">
+        <div className="flex flex-col items-center gap-12">
+          <h1 className="text-center text-3xl font-bold md:text-left md:text-5xl lg:text-6xl xl:text-8xl">
+            About us
+          </h1>
+          <p className="text-md text-center md:text-left lg:text-lg">
+            We started as a team participating in the JARomania Skills for the
+            Future project, where we were tasked to identify a pressing problem
+            within our community and, to the best of our abilities, try to solve
+            it utilising Agile principles.
           </p>
-        </a>
-      </div>
-    </main>
+          <p className="text-md text-center md:text-left lg:text-lg">
+            Seeing all of us had issues with communit engagement and felt like
+            our environment was rather lackluster and oftentimes outright boring
+            inducing due to teacher's absences or the lack of fellow student
+            engagement, we decided to take matters into our own hands and try to
+            create a place where information is readily available and at your
+            fingertips and more than that a place where a sense of community can
+            really form and help everyone explore their passions, aiding them
+            whenever necessary.
+          </p>
+          <p className="text-md text-center md:text-left lg:text-lg">
+            Our collective journey sprouted from the seeds of disenchantment
+            within our community. Beyond the surface of disengagement lay a
+            deeper yearning for connection and purpose. We recognized the
+            untapped potential within our peers, obscured by the mundane
+            routines of academic life. Fuelled by this insight, we envisioned a
+            dynamic space where curiosity thrives and passions intertwine. By
+            fostering an ecosystem of collaboration and inclusivity, we aim to
+            transcend the barriers of traditional education, creating a melting
+            pot of diverse perspectives and talents. Our endeavor extends beyond
+            mere information dissemination; it's a catalyst for transformation,
+            igniting the spark of creativity and innovation within each member.
+          </p>
+        </div>
+      </Section>
+    </>
   );
 }
