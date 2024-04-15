@@ -38,7 +38,7 @@ const Navigation = () => {
       <div className="mx-auto flex h-full w-4/5 flex-row items-center justify-between">
         <div className="flex flex-row items-center gap-2">
           <Image
-            src="/paddington_logo.png"
+            src="/JARomania-Paddington/paddington_logo.png"
             alt="Paddington Logo"
             width={32}
             height={32}
@@ -66,7 +66,7 @@ const Navigation = () => {
           <Image
             onClick={() => setOpen(!open)}
             className="scale-150 select-none hover:scale-[1.75] hover:cursor-pointer active:scale-[1.25]"
-            src="/burger.svg"
+            src="/JARomania-Paddington/burger.svg"
             alt="BUGER MENU"
             width={16}
             height={16}

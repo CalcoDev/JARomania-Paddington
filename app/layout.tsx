@@ -31,7 +31,7 @@ export default function RootLayout({
       suppressHydrationWarning
     >
       <head>
-        <link rel="icon" href="/owlbear.ico" sizes="any" />
+        <link rel="icon" href="/JARomania-Paddington/owlbear.ico" sizes="any" />
       </head>
       <body
         className={`${poppins.className}  ${poppins.variable} bg-background`}

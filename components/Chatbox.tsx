@@ -27,7 +27,7 @@ const Chatbox = () => {
         >
           <Image
             className="h-1/3 w-1/3"
-            src="/chat_arrow.svg"
+            src="/JARomania-Paddington/chat_arrow.svg"
             alt="START CHAT"
             width={22}
             height={22}
@@ -41,7 +41,7 @@ const Chatbox = () => {
           <div className="relative h-[130px] w-full">
             <Image
               className="w-full select-none"
-              src="/ai_helper.png"
+              src="/JARomania-Paddington/ai_helper.png"
               alt="background graident"
               width={235 * 4}
               height={98 * 4}
@@ -50,7 +50,7 @@ const Chatbox = () => {
               <div className="flex items-center gap-2">
                 <Image
                   className="scale"
-                  src="/ai_icon.png"
+                  src="/JARomania-Paddington/ai_icon.png"
                   alt="AI ICON"
                   width={37}
                   height={37}

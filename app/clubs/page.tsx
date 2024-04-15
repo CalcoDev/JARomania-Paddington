@@ -142,7 +142,7 @@ const Card = ({
               <div className="flex items-center gap-5">
                 <Image
                   alt={`${title} FACEBOOK`}
-                  src="/facebook.svg"
+                  src="/JARomania-Paddington/facebook.svg"
                   width={32}
                   height={32}
                 />
@@ -155,7 +155,7 @@ const Card = ({
               <div className="flex items-center gap-5">
                 <Image
                   alt={`${title} INSTAGRAM`}
-                  src="/instagram.svg"
+                  src="/JARomania-Paddington/instagram.svg"
                   width={32}
                   height={32}
                 />

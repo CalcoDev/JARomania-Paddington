@@ -28,7 +28,7 @@ export default function Home() {
           <Image
             className="flex-1 md:w-2/3 lg:w-[60vw]"
             alt="Illustratiotn"
-            src="/homepage.png"
+            src="/JARomania-Paddington/homepage.png"
             width={528}
             height={528}
           />

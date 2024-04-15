@@ -27,7 +27,7 @@ const Footer = () => {
           <div className="flex flex-col justify-between">
             <div className="hidden items-center justify-center gap-5 self-end md:flex">
               <Image
-                src="/paddington_logo.png"
+                src="/JARomania-Paddington/paddington_logo.png"
                 alt="Paddington Logo"
                 width={32}
                 height={32}
@@ -46,7 +46,7 @@ const Footer = () => {
           </div>
           <div className="flex items-center justify-center gap-5 self-center md:hidden">
             <Image
-              src="/paddington_logo.png"
+              src="/JARomania-Paddington/paddington_logo.png"
               alt="Paddington Logo"
               width={32}
               height={32}
