@@ -39,8 +39,7 @@ const Footer = () => {
             <div className="w-full">
               <h1 className="text-base font-light">No cookies 🍪</h1>
               <h2 className="text-xs font-light opacity-50">
-                Copyright © 2023 All Rights Reserved. CC BY-NC-ND License. (or
-                somet other copyright message)
+                Copyright © 2024 Team Paddington
               </h2>
             </div>
           </div>
