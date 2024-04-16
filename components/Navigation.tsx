@@ -87,7 +87,7 @@ const Navigation = () => {
               onClick={() => {
                 setOpen(false);
               }}
-              href="/#clubs"
+              href="/clubs"
             >
               Clubs
             </PhoneNavLink>
