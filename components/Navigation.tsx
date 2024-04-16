@@ -53,12 +53,12 @@ const Navigation = () => {
             <NavigationLink text="Information" href="/#information" />
             <NavigationLink text="Clubs" href="/clubs" />
             <NavigationLink text="About" href="/#about" />
-            <Link
-              href="/chat"
+            <a
+              href="https://www.chatbase.co/chatbot-iframe/RM93g6ev0UaREJ0bjsk1D"
               className="rounded-lg border-2 border-white border-opacity-25 bg-background px-8 py-2 text-text transition-all duration-75 ease-in-out hover:bg-text hover:text-background"
             >
               Chat
-            </Link>
+            </a>
           </div>
         </div>
 
