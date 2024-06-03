@@ -9,7 +9,7 @@ const Section: React.FC<React.HTMLAttributes<HTMLDivElement>> = ({
 }) => {
   return (
     <section
-      className={`${className} mb-12 min-h-screen w-full scroll-smooth`}
+      className={`${className} mb-12 min-h-fit w-full scroll-smooth py-20`}
       {...rest}
     >
       {children}
@@ -26,7 +26,7 @@ export default function Home() {
       >
         <div className="flex flex-col items-center gap-12 md:flex-row">
           <Image
-            className="flex-1 md:w-2/3 lg:w-[60vw]"
+            className="flex-1 md:w-[40%] lg:w-[40vw]"
             alt="Illustratiotn"
             src="/homepage.png"
             width={528}
@@ -48,13 +48,13 @@ export default function Home() {
             <div className="flex flex-row gap-4">
               <Link
                 href="#about"
-                className="rounded-lg bg-secondary bg-opacity-25 px-6 py-3 transition-all duration-150 ease-in-out hover:scale-105 hover:bg-opacity-50 active:scale-95"
+                className="rounded-lg bg-secondary bg-opacity-25 px-6 py-3 text-center transition-all duration-150 ease-in-out hover:scale-105 hover:bg-opacity-50 active:scale-95"
               >
                 Learn more
               </Link>
               <Link
                 href="/chat"
-                className="rounded-lg bg-primary px-6 py-3 transition-all duration-150 ease-in-out hover:scale-105 active:scale-95"
+                className="rounded-lg bg-primary px-6 py-3 text-center transition-all duration-150 ease-in-out hover:scale-105 active:scale-95"
               >
                 See the Demo
               </Link>
