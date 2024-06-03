@@ -28,7 +28,7 @@ export default function Home() {
           <Image
             className="flex-1 md:w-2/3 lg:w-[60vw]"
             alt="Illustratiotn"
-            src="/JARomania-Paddington/homepage.png"
+            src="/homepage.png"
             width={528}
             height={528}
           />
@@ -100,7 +100,7 @@ export default function Home() {
             it utilising Agile principles.
           </p>
           <p className="text-md text-center md:text-left lg:text-lg">
-            Seeing all of us had issues with communit engagement and felt like
+            Seeing all of us had issues with community engagement and felt like
             our environment was rather lackluster and oftentimes outright boring
             inducing due to teacher&apos;s absences or the lack of fellow
             student engagement, we decided to take matters into our own hands

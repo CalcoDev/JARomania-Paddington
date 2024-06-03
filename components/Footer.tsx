@@ -27,7 +27,7 @@ const Footer = () => {
           <div className="flex flex-col justify-between">
             <div className="hidden items-center justify-center gap-5 self-end md:flex">
               <Image
-                src="/JARomania-Paddington/paddington_logo.png"
+                src="/ai_bear.png"
                 alt="Paddington Logo"
                 width={32}
                 height={32}
@@ -39,14 +39,15 @@ const Footer = () => {
             <div className="w-full">
               <h1 className="text-base font-light">No cookies 🍪</h1>
               <h2 className="text-xs font-light opacity-50">
-                Copyright © 2023 All Rights Reserved. CC BY-NC-ND License. (or
-                somet other copyright message)
+                All rights reserved. No part of this website may be reproduced,
+                distributed, or transmitted in any form or by any means, without
+                prior written permission of the owner.
               </h2>
             </div>
           </div>
           <div className="flex items-center justify-center gap-5 self-center md:hidden">
             <Image
-              src="/JARomania-Paddington/paddington_logo.png"
+              src="/ai_bear.png"
               alt="Paddington Logo"
               width={32}
               height={32}

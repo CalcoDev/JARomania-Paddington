@@ -38,10 +38,11 @@ const Navigation = () => {
       <div className="mx-auto flex h-full w-4/5 flex-row items-center justify-between">
         <div className="flex flex-row items-center gap-2">
           <Image
-            src="/JARomania-Paddington/paddington_logo.png"
+            src="/ai_bear.png"
             alt="Paddington Logo"
             width={32}
             height={32}
+            // className="rounded-full"
           />
           <Link href="/" className="text-lg font-semibold">
             Paddington
@@ -53,6 +54,10 @@ const Navigation = () => {
             <NavigationLink text="Information" href="/#information" />
             <NavigationLink text="Clubs" href="/clubs" />
             <NavigationLink text="About" href="/#about" />
+            <NavigationLink
+              text="Feedback"
+              href="https://forms.gle/s9EaM4UE8UaU5q6n9"
+            />
             <Link
               href="/chat"
               className="rounded-lg border-2 border-white border-opacity-25 bg-background px-8 py-2 text-text transition-all duration-75 ease-in-out hover:bg-text hover:text-background"
@@ -66,14 +71,14 @@ const Navigation = () => {
           <Image
             onClick={() => setOpen(!open)}
             className="scale-150 select-none hover:scale-[1.75] hover:cursor-pointer active:scale-[1.25]"
-            src="/JARomania-Paddington/burger.svg"
+            src="/burger.svg"
             alt="BUGER MENU"
             width={16}
             height={16}
           />
           {/* {open && ( */}
           <div
-            className={`${open ? "h-[min(16rem)] border-b-2" : "h-0 border-b-0"} absolute left-0 top-0 mt-16 flex w-screen flex-col gap-2 overflow-hidden border-white border-opacity-25 bg-background transition-all duration-200 ease-in-out`}
+            className={`${open ? "h-[24rem] border-b-2" : "h-0 border-b-0"} absolute left-0 top-0 mt-16 flex w-screen flex-col gap-2 overflow-hidden border-white border-opacity-25 bg-background transition-all duration-200 ease-in-out`}
           >
             <PhoneNavLink
               onClick={() => {
@@ -87,7 +92,7 @@ const Navigation = () => {
               onClick={() => {
                 setOpen(false);
               }}
-              href="/#clubs"
+              href="/clubs"
             >
               Clubs
             </PhoneNavLink>
@@ -98,6 +103,14 @@ const Navigation = () => {
               href="/#about"
             >
               About
+            </PhoneNavLink>
+            <PhoneNavLink
+              onClick={() => {
+                setOpen(false);
+              }}
+              href="https://forms.gle/s9EaM4UE8UaU5q6n9"
+            >
+              Feedback
             </PhoneNavLink>
             <PhoneNavLink
               onClick={() => {
