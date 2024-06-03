@@ -18,7 +18,7 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   title: "Paddington CNMV",
-  description: "A new CNMV browser by Team Paddington.",
+  description: "A new, AI-powered CNMV website by Team Paddington.",
 };
 
 export default function RootLayout({
@@ -33,7 +33,7 @@ export default function RootLayout({
       suppressHydrationWarning
     >
       <head>
-        <link rel="icon" href="/JARomania-Paddington/owlbear.ico" sizes="any" />
+        <link rel="icon" href="/owlbear.ico" sizes="any" />
       </head>
       <body
         className={`${poppins.className}  ${poppins.variable} bg-background`}
