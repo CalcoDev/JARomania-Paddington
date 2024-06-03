@@ -6,6 +6,8 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import Chatbox from "@/components/Chatbox";
 
+// import Script from "@/components/Script"
+
 const inter = Inter({ subsets: ["latin"] });
 const poppins = Poppins({
   subsets: ["latin"],
@@ -42,6 +44,8 @@ export default function RootLayout({
           <Footer />
           <Chatbox />
         </Providers>
+
+        {/*<Script />*/}
       </body>
     </html>
   );
