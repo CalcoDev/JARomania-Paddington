@@ -18,6 +18,9 @@ export default function Chat() {
       </h1>
 
       <div className="flex flex-1 flex-col gap-4 px-4">
+        <h3 className="mb-8 w-full text-center">
+          This exchange is a placeholder to illustrate UI.
+        </h3>
         <BotMessage text="Welcome to High School Helper! How can I assist you today?" />
         <UserMessage text="Hi! I'm considering enrolling in your high school. Can you provide me with some information?" />
         <BotMessage text="Of course! What would you like to know?" />
@@ -34,7 +37,8 @@ export default function Chat() {
       </div>
       <div className="w-full px-4 py-4">
         <textarea
-          placeholder="Enter a message ..."
+          disabled
+          placeholder="Enter a message ... (disabled placeholder)"
           className="flex w-full resize-none items-center rounded-lg border-b-2 border-t-2 border-black border-opacity-25 bg-text px-4 pb-0 pt-6 text-background focus:outline-none active:no-underline active:outline-none"
         />
       </div>
