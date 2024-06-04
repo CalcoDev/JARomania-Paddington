@@ -1,7 +1,16 @@
-# Project
+# JARomania Paddington CNMV
 
-Ahh… So concludes the life and times of JARomania project. A fitting end to an existence defined by futile struggle. Doomed, from the very start… And I regret every SECOND of it! Hahahahaha, ahahahahaha, AHAHAHAHAHAHA, RAAHAHAHAHAHAHAHAHA, AAAHAAAHahahahaahaaa...
+A new, AI powered, take on High School community engagement, management and problem solving, utilizing the power of AI.
 
-_Explodes_
+## License
 
-![explode](./github/my_exit.gif)
+This project is licensed under the MIT License - see the LICENSE.md file for details
+
+## Acknowledgments
+
+-   Tools
+    -   [Typescript](https://www.typescriptlang.org/)
+    -   [Vite](https://vitejs.dev/)
+    -   [React](https://react.dev/)
+    -   [NexttJS](https://nextjs.org/)
+    -   [GitHub Actions](https://docs.github.com/en/actions)
